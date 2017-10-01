@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6247C27BEC39B6CDEA91CD25 /* Pods_GenieU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D906E40E155EE62CA8A9CD96 /* Pods_GenieU.framework */; };
+		7D2940C88809C5E16FABB27B /* Pods_GenieUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FD269A1F487132ADEA33A /* Pods_GenieUTests.framework */; };
+		F379E94AA1093D0BC6326523 /* Pods_GenieUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770D3F7D16649CC5B9094427 /* Pods_GenieUUITests.framework */; };
+		F90D01A11F7ADAC300D3EE5A /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D01A01F7ADAC300D3EE5A /* HttpService.swift */; };
+		F90D01A41F7ADAE100D3EE5A /* HttpServiceShould.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D01A31F7ADAE100D3EE5A /* HttpServiceShould.swift */; };
+		F916CA501F7AF5980083E7CA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916CA4F1F7AF5980083E7CA /* Account.swift */; };
+		F916CA521F7BFBDB0083E7CA /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916CA511F7BFBDB0083E7CA /* DashboardViewController.swift */; };
+		F916CA551F7C23BA0083E7CA /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916CA541F7C23BA0083E7CA /* AccountTableViewCell.swift */; };
+		F9BCB89D1F7AD7210079DAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB89C1F7AD7210079DAC4 /* AppDelegate.swift */; };
+		F9BCB8A21F7AD7210079DAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BCB8A01F7AD7210079DAC4 /* Main.storyboard */; };
+		F9BCB8A41F7AD7210079DAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BCB8A31F7AD7210079DAC4 /* Assets.xcassets */; };
+		F9BCB8A71F7AD7210079DAC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BCB8A51F7AD7210079DAC4 /* LaunchScreen.storyboard */; };
+		F9BCB8B21F7AD7210079DAC4 /* GenieUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB8B11F7AD7210079DAC4 /* GenieUTests.swift */; };
+		F9BCB8BD1F7AD7210079DAC4 /* GenieUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB8BC1F7AD7210079DAC4 /* GenieUUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9BCB8AE1F7AD7210079DAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9BCB8911F7AD7210079DAC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9BCB8981F7AD7210079DAC4;
+			remoteInfo = GenieU;
+		};
+		F9BCB8B91F7AD7210079DAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9BCB8911F7AD7210079DAC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9BCB8981F7AD7210079DAC4;
+			remoteInfo = GenieU;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02380048ABF20F18A6AFD4FE /* Pods-GenieUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieUTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenieUTests/Pods-GenieUTests.release.xcconfig"; sourceTree = "<group>"; };
+		03469FFC5CC87E2F70C91179 /* Pods-GenieUUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieUUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenieUUITests/Pods-GenieUUITests.release.xcconfig"; sourceTree = "<group>"; };
+		770D3F7D16649CC5B9094427 /* Pods_GenieUUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieUUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F9BA6D043E7C571EE7372A /* Pods-GenieU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenieU/Pods-GenieU.debug.xcconfig"; sourceTree = "<group>"; };
+		9BDB76600DCDEFB273DBF435 /* Pods-GenieUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenieUTests/Pods-GenieUTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A01FD269A1F487132ADEA33A /* Pods_GenieUTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieUTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20888940CEE3FE569896363 /* Pods-GenieU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieU.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenieU/Pods-GenieU.release.xcconfig"; sourceTree = "<group>"; };
+		D906E40E155EE62CA8A9CD96 /* Pods_GenieU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE23F1A08773D16822C54DE9 /* Pods-GenieUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieUUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenieUUITests/Pods-GenieUUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F90D01A01F7ADAC300D3EE5A /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		F90D01A31F7ADAE100D3EE5A /* HttpServiceShould.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceShould.swift; sourceTree = "<group>"; };
+		F916CA4F1F7AF5980083E7CA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F916CA511F7BFBDB0083E7CA /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F916CA541F7C23BA0083E7CA /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		F9BCB8991F7AD7210079DAC4 /* GenieU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenieU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BCB89C1F7AD7210079DAC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9BCB8A11F7AD7210079DAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9BCB8A31F7AD7210079DAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9BCB8A61F7AD7210079DAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9BCB8A81F7AD7210079DAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BCB8AD1F7AD7210079DAC4 /* GenieUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenieUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BCB8B11F7AD7210079DAC4 /* GenieUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieUTests.swift; sourceTree = "<group>"; };
+		F9BCB8B31F7AD7210079DAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BCB8B81F7AD7210079DAC4 /* GenieUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenieUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BCB8BC1F7AD7210079DAC4 /* GenieUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieUUITests.swift; sourceTree = "<group>"; };
+		F9BCB8BE1F7AD7210079DAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9BCB8961F7AD7210079DAC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6247C27BEC39B6CDEA91CD25 /* Pods_GenieU.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BCB8AA1F7AD7210079DAC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2940C88809C5E16FABB27B /* Pods_GenieUTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BCB8B51F7AD7210079DAC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F379E94AA1093D0BC6326523 /* Pods_GenieUUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68476E5BD68990E8EBFAB8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D906E40E155EE62CA8A9CD96 /* Pods_GenieU.framework */,
+				A01FD269A1F487132ADEA33A /* Pods_GenieUTests.framework */,
+				770D3F7D16649CC5B9094427 /* Pods_GenieUUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B9B83D960D363EA51A1E492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F9BA6D043E7C571EE7372A /* Pods-GenieU.debug.xcconfig */,
+				D20888940CEE3FE569896363 /* Pods-GenieU.release.xcconfig */,
+				9BDB76600DCDEFB273DBF435 /* Pods-GenieUTests.debug.xcconfig */,
+				02380048ABF20F18A6AFD4FE /* Pods-GenieUTests.release.xcconfig */,
+				DE23F1A08773D16822C54DE9 /* Pods-GenieUUITests.debug.xcconfig */,
+				03469FFC5CC87E2F70C91179 /* Pods-GenieUUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F90D019F1F7ADAA300D3EE5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F90D01A01F7ADAC300D3EE5A /* HttpService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F90D01A21F7ADAD300D3EE5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F90D01A31F7ADAE100D3EE5A /* HttpServiceShould.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F916CA4E1F7AF58B0083E7CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F916CA4F1F7AF5980083E7CA /* Account.swift */,
+				F916CA541F7C23BA0083E7CA /* AccountTableViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F916CA531F7BFBE20083E7CA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F916CA511F7BFBDB0083E7CA /* DashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9BCB8901F7AD7210079DAC4 = {
+			isa = PBXGroup;
+			children = (
+				F9BCB89B1F7AD7210079DAC4 /* GenieU */,
+				F9BCB8B01F7AD7210079DAC4 /* GenieUTests */,
+				F9BCB8BB1F7AD7210079DAC4 /* GenieUUITests */,
+				F9BCB89A1F7AD7210079DAC4 /* Products */,
+				9B9B83D960D363EA51A1E492 /* Pods */,
+				68476E5BD68990E8EBFAB8C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9BCB89A1F7AD7210079DAC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9BCB8991F7AD7210079DAC4 /* GenieU.app */,
+				F9BCB8AD1F7AD7210079DAC4 /* GenieUTests.xctest */,
+				F9BCB8B81F7AD7210079DAC4 /* GenieUUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9BCB89B1F7AD7210079DAC4 /* GenieU */ = {
+			isa = PBXGroup;
+			children = (
+				F916CA531F7BFBE20083E7CA /* ViewControllers */,
+				F916CA4E1F7AF58B0083E7CA /* Models */,
+				F90D019F1F7ADAA300D3EE5A /* Services */,
+				F9BCB89C1F7AD7210079DAC4 /* AppDelegate.swift */,
+				F9BCB8A01F7AD7210079DAC4 /* Main.storyboard */,
+				F9BCB8A31F7AD7210079DAC4 /* Assets.xcassets */,
+				F9BCB8A51F7AD7210079DAC4 /* LaunchScreen.storyboard */,
+				F9BCB8A81F7AD7210079DAC4 /* Info.plist */,
+			);
+			path = GenieU;
+			sourceTree = "<group>";
+		};
+		F9BCB8B01F7AD7210079DAC4 /* GenieUTests */ = {
+			isa = PBXGroup;
+			children = (
+				F90D01A21F7ADAD300D3EE5A /* Services */,
+				F9BCB8B11F7AD7210079DAC4 /* GenieUTests.swift */,
+				F9BCB8B31F7AD7210079DAC4 /* Info.plist */,
+			);
+			path = GenieUTests;
+			sourceTree = "<group>";
+		};
+		F9BCB8BB1F7AD7210079DAC4 /* GenieUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9BCB8BC1F7AD7210079DAC4 /* GenieUUITests.swift */,
+				F9BCB8BE1F7AD7210079DAC4 /* Info.plist */,
+			);
+			path = GenieUUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9BCB8981F7AD7210079DAC4 /* GenieU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BCB8C11F7AD7210079DAC4 /* Build configuration list for PBXNativeTarget "GenieU" */;
+			buildPhases = (
+				AC449462A71BB8882364E76F /* [CP] Check Pods Manifest.lock */,
+				F9BCB8951F7AD7210079DAC4 /* Sources */,
+				F9BCB8961F7AD7210079DAC4 /* Frameworks */,
+				F9BCB8971F7AD7210079DAC4 /* Resources */,
+				A65FC70EB0C2B8D0089754D8 /* [CP] Embed Pods Frameworks */,
+				9C2FF61128C89774D49B0ADF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenieU;
+			productName = GenieU;
+			productReference = F9BCB8991F7AD7210079DAC4 /* GenieU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9BCB8AC1F7AD7210079DAC4 /* GenieUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BCB8C41F7AD7210079DAC4 /* Build configuration list for PBXNativeTarget "GenieUTests" */;
+			buildPhases = (
+				434BF08C30671EE9595B1C85 /* [CP] Check Pods Manifest.lock */,
+				F9BCB8A91F7AD7210079DAC4 /* Sources */,
+				F9BCB8AA1F7AD7210079DAC4 /* Frameworks */,
+				F9BCB8AB1F7AD7210079DAC4 /* Resources */,
+				85FCB6553BC7EBDC101CDA50 /* [CP] Embed Pods Frameworks */,
+				1067155B812AE77D04A536C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9BCB8AF1F7AD7210079DAC4 /* PBXTargetDependency */,
+			);
+			name = GenieUTests;
+			productName = GenieUTests;
+			productReference = F9BCB8AD1F7AD7210079DAC4 /* GenieUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9BCB8B71F7AD7210079DAC4 /* GenieUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BCB8C71F7AD7210079DAC4 /* Build configuration list for PBXNativeTarget "GenieUUITests" */;
+			buildPhases = (
+				2B8E27848BBF3E1823E3FF5D /* [CP] Check Pods Manifest.lock */,
+				F9BCB8B41F7AD7210079DAC4 /* Sources */,
+				F9BCB8B51F7AD7210079DAC4 /* Frameworks */,
+				F9BCB8B61F7AD7210079DAC4 /* Resources */,
+				5B1E8236CE14300EC87A7A43 /* [CP] Embed Pods Frameworks */,
+				0122698D093CD9FC553BA642 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9BCB8BA1F7AD7210079DAC4 /* PBXTargetDependency */,
+			);
+			name = GenieUUITests;
+			productName = GenieUUITests;
+			productReference = F9BCB8B81F7AD7210079DAC4 /* GenieUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9BCB8911F7AD7210079DAC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "The Pocket Company";
+				TargetAttributes = {
+					F9BCB8981F7AD7210079DAC4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					F9BCB8AC1F7AD7210079DAC4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9BCB8981F7AD7210079DAC4;
+					};
+					F9BCB8B71F7AD7210079DAC4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9BCB8981F7AD7210079DAC4;
+					};
+				};
+			};
+			buildConfigurationList = F9BCB8941F7AD7210079DAC4 /* Build configuration list for PBXProject "GenieU" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9BCB8901F7AD7210079DAC4;
+			productRefGroup = F9BCB89A1F7AD7210079DAC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9BCB8981F7AD7210079DAC4 /* GenieU */,
+				F9BCB8AC1F7AD7210079DAC4 /* GenieUTests */,
+				F9BCB8B71F7AD7210079DAC4 /* GenieUUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9BCB8971F7AD7210079DAC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BCB8A71F7AD7210079DAC4 /* LaunchScreen.storyboard in Resources */,
+				F9BCB8A41F7AD7210079DAC4 /* Assets.xcassets in Resources */,
+				F9BCB8A21F7AD7210079DAC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BCB8AB1F7AD7210079DAC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BCB8B61F7AD7210079DAC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0122698D093CD9FC553BA642 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenieUUITests/Pods-GenieUUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1067155B812AE77D04A536C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenieUTests/Pods-GenieUTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8E27848BBF3E1823E3FF5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenieUUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		434BF08C30671EE9595B1C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenieUTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1E8236CE14300EC87A7A43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenieUUITests/Pods-GenieUUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85FCB6553BC7EBDC101CDA50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenieUTests/Pods-GenieUTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C2FF61128C89774D49B0ADF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenieU/Pods-GenieU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A65FC70EB0C2B8D0089754D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GenieU/Pods-GenieU-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GenieU/Pods-GenieU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC449462A71BB8882364E76F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenieU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9BCB8951F7AD7210079DAC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BCB89D1F7AD7210079DAC4 /* AppDelegate.swift in Sources */,
+				F916CA521F7BFBDB0083E7CA /* DashboardViewController.swift in Sources */,
+				F916CA551F7C23BA0083E7CA /* AccountTableViewCell.swift in Sources */,
+				F916CA501F7AF5980083E7CA /* Account.swift in Sources */,
+				F90D01A11F7ADAC300D3EE5A /* HttpService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BCB8A91F7AD7210079DAC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90D01A41F7ADAE100D3EE5A /* HttpServiceShould.swift in Sources */,
+				F9BCB8B21F7AD7210079DAC4 /* GenieUTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BCB8B41F7AD7210079DAC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BCB8BD1F7AD7210079DAC4 /* GenieUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9BCB8AF1F7AD7210079DAC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9BCB8981F7AD7210079DAC4 /* GenieU */;
+			targetProxy = F9BCB8AE1F7AD7210079DAC4 /* PBXContainerItemProxy */;
+		};
+		F9BCB8BA1F7AD7210079DAC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9BCB8981F7AD7210079DAC4 /* GenieU */;
+			targetProxy = F9BCB8B91F7AD7210079DAC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9BCB8A01F7AD7210079DAC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9BCB8A11F7AD7210079DAC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9BCB8A51F7AD7210079DAC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9BCB8A61F7AD7210079DAC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9BCB8BF1F7AD7210079DAC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9BCB8C01F7AD7210079DAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9BCB8C21F7AD7210079DAC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F9BA6D043E7C571EE7372A /* Pods-GenieU.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenieU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thepocketcompany.GenieU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9BCB8C31F7AD7210079DAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20888940CEE3FE569896363 /* Pods-GenieU.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenieU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thepocketcompany.GenieU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9BCB8C51F7AD7210079DAC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDB76600DCDEFB273DBF435 /* Pods-GenieUTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenieUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thepocketcompany.GenieUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenieU.app/GenieU";
+			};
+			name = Debug;
+		};
+		F9BCB8C61F7AD7210079DAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02380048ABF20F18A6AFD4FE /* Pods-GenieUTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenieUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thepocketcompany.GenieUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenieU.app/GenieU";
+			};
+			name = Release;
+		};
+		F9BCB8C81F7AD7210079DAC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE23F1A08773D16822C54DE9 /* Pods-GenieUUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenieUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thepocketcompany.GenieUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenieU;
+			};
+			name = Debug;
+		};
+		F9BCB8C91F7AD7210079DAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03469FFC5CC87E2F70C91179 /* Pods-GenieUUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenieUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thepocketcompany.GenieUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenieU;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9BCB8941F7AD7210079DAC4 /* Build configuration list for PBXProject "GenieU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BCB8BF1F7AD7210079DAC4 /* Debug */,
+				F9BCB8C01F7AD7210079DAC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BCB8C11F7AD7210079DAC4 /* Build configuration list for PBXNativeTarget "GenieU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BCB8C21F7AD7210079DAC4 /* Debug */,
+				F9BCB8C31F7AD7210079DAC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BCB8C41F7AD7210079DAC4 /* Build configuration list for PBXNativeTarget "GenieUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BCB8C51F7AD7210079DAC4 /* Debug */,
+				F9BCB8C61F7AD7210079DAC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BCB8C71F7AD7210079DAC4 /* Build configuration list for PBXNativeTarget "GenieUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BCB8C81F7AD7210079DAC4 /* Debug */,
+				F9BCB8C91F7AD7210079DAC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9BCB8911F7AD7210079DAC4 /* Project object */;
+}

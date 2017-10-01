@@ -1,0 +1,6 @@
+framework module Pods_GenieU {
+  umbrella header "Pods-GenieU-umbrella.h"
+
+  export *
+  module * { export * }
+}
