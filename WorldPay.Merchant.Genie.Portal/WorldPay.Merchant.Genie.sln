@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{36F79513-B8D3-477C-8462-C42A2420AFE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3A4A635F-58E7-4791-89DA-9BBD8477A587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPay.Merchant.Genie.Infrastructure.UnitTests", "WordPay.Merchant.Genie.Infrastructure.UnitTests\WordPay.Merchant.Genie.Infrastructure.UnitTests.csproj", "{24E88DCD-C3EC-4620-BA7B-A0A5091F111C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPay.Merchant.Genie.Web", "WorldPay.Merchant.Genie.Web\WorldPay.Merchant.Genie.Web.csproj", "{731791F6-B8BF-40EE-955F-B8E6767D7AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPay.Merchant.Genie.Infrastructure", "WorldPay.Merchant.Genie.Infrastructure\WorldPay.Merchant.Genie.Infrastructure.csproj", "{11721C46-170A-426A-8146-D76B4AB883AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPay.Merchant.Genie.Web.UnitTests", "WorldPay.Merchant.Genie.Web.UnitTests\WorldPay.Merchant.Genie.Web.UnitTests.csproj", "{E8B563A4-F1C5-4471-A29A-42B9CB61E405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24E88DCD-C3EC-4620-BA7B-A0A5091F111C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24E88DCD-C3EC-4620-BA7B-A0A5091F111C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24E88DCD-C3EC-4620-BA7B-A0A5091F111C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24E88DCD-C3EC-4620-BA7B-A0A5091F111C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{731791F6-B8BF-40EE-955F-B8E6767D7AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{731791F6-B8BF-40EE-955F-B8E6767D7AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{731791F6-B8BF-40EE-955F-B8E6767D7AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{731791F6-B8BF-40EE-955F-B8E6767D7AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11721C46-170A-426A-8146-D76B4AB883AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11721C46-170A-426A-8146-D76B4AB883AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11721C46-170A-426A-8146-D76B4AB883AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11721C46-170A-426A-8146-D76B4AB883AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24E88DCD-C3EC-4620-BA7B-A0A5091F111C} = {36F79513-B8D3-477C-8462-C42A2420AFE3}
+		{731791F6-B8BF-40EE-955F-B8E6767D7AC7} = {3A4A635F-58E7-4791-89DA-9BBD8477A587}
+		{11721C46-170A-426A-8146-D76B4AB883AA} = {3A4A635F-58E7-4791-89DA-9BBD8477A587}
+		{E8B563A4-F1C5-4471-A29A-42B9CB61E405} = {36F79513-B8D3-477C-8462-C42A2420AFE3}
+	EndGlobalSection
+EndGlobal
