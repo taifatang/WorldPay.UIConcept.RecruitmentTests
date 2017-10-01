@@ -9,11 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3A4A635F-5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPay.Merchant.Genie.Infrastructure.UnitTests", "WordPay.Merchant.Genie.Infrastructure.UnitTests\WordPay.Merchant.Genie.Infrastructure.UnitTests.csproj", "{24E88DCD-C3EC-4620-BA7B-A0A5091F111C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPay.Merchant.Genie.Web", "WorldPay.Merchant.Genie.Web\WorldPay.Merchant.Genie.Web.csproj", "{731791F6-B8BF-40EE-955F-B8E6767D7AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldPay.Merchant.Genie.Web", "WorldPay.Merchant.Genie.Web\WorldPay.Merchant.Genie.Web.csproj", "{731791F6-B8BF-40EE-955F-B8E6767D7AC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPay.Merchant.Genie.Infrastructure", "WorldPay.Merchant.Genie.Infrastructure\WorldPay.Merchant.Genie.Infrastructure.csproj", "{11721C46-170A-426A-8146-D76B4AB883AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldPay.Merchant.Genie.Web.UnitTests", "WorldPay.Merchant.Genie.Web.UnitTests\WorldPay.Merchant.Genie.Web.UnitTests.csproj", "{E8B563A4-F1C5-4471-A29A-42B9CB61E405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPay.Merchant.Genie.Infrastructure.AcceptanceTests", "WordPay.Merchant.Genie.Infrastructure.AcceptanceTests\WordPay.Merchant.Genie.Infrastructure.AcceptanceTests.csproj", "{8F98304B-CAD1-4D43-8D02-BB5FC62550E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPay.Merchange.Genie.Web.AcceptanceTests", "WordPay.Merchange.Genie.Web.AcceptanceTests\WordPay.Merchange.Genie.Web.AcceptanceTests.csproj", "{7408D1B6-92FA-4C45-9A2B-593D92CEF1C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,14 @@ Global
 		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8B563A4-F1C5-4471-A29A-42B9CB61E405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F98304B-CAD1-4D43-8D02-BB5FC62550E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F98304B-CAD1-4D43-8D02-BB5FC62550E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F98304B-CAD1-4D43-8D02-BB5FC62550E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F98304B-CAD1-4D43-8D02-BB5FC62550E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7408D1B6-92FA-4C45-9A2B-593D92CEF1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7408D1B6-92FA-4C45-9A2B-593D92CEF1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7408D1B6-92FA-4C45-9A2B-593D92CEF1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7408D1B6-92FA-4C45-9A2B-593D92CEF1C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +58,7 @@ Global
 		{731791F6-B8BF-40EE-955F-B8E6767D7AC7} = {3A4A635F-58E7-4791-89DA-9BBD8477A587}
 		{11721C46-170A-426A-8146-D76B4AB883AA} = {3A4A635F-58E7-4791-89DA-9BBD8477A587}
 		{E8B563A4-F1C5-4471-A29A-42B9CB61E405} = {36F79513-B8D3-477C-8462-C42A2420AFE3}
+		{8F98304B-CAD1-4D43-8D02-BB5FC62550E4} = {36F79513-B8D3-477C-8462-C42A2420AFE3}
+		{7408D1B6-92FA-4C45-9A2B-593D92CEF1C6} = {36F79513-B8D3-477C-8462-C42A2420AFE3}
 	EndGlobalSection
 EndGlobal
