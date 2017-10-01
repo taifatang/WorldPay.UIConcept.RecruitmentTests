@@ -15,6 +15,8 @@
 		F916CA501F7AF5980083E7CA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916CA4F1F7AF5980083E7CA /* Account.swift */; };
 		F916CA521F7BFBDB0083E7CA /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916CA511F7BFBDB0083E7CA /* DashboardViewController.swift */; };
 		F916CA551F7C23BA0083E7CA /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916CA541F7C23BA0083E7CA /* AccountTableViewCell.swift */; };
+		F992B6891F819A5C002E56B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992B6881F819A5C002E56B6 /* LoginViewController.swift */; };
+		F992B68B1F819DEE002E56B6 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992B68A1F819DEE002E56B6 /* LoginRequestModel.swift */; };
 		F9BCB89D1F7AD7210079DAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB89C1F7AD7210079DAC4 /* AppDelegate.swift */; };
 		F9BCB8A21F7AD7210079DAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BCB8A01F7AD7210079DAC4 /* Main.storyboard */; };
 		F9BCB8A41F7AD7210079DAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BCB8A31F7AD7210079DAC4 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		F916CA4F1F7AF5980083E7CA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		F916CA511F7BFBDB0083E7CA /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		F916CA541F7C23BA0083E7CA /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		F992B6881F819A5C002E56B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F992B68A1F819DEE002E56B6 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
 		F9BCB8991F7AD7210079DAC4 /* GenieU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenieU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BCB89C1F7AD7210079DAC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9BCB8A11F7AD7210079DAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			children = (
 				F916CA4F1F7AF5980083E7CA /* Account.swift */,
 				F916CA541F7C23BA0083E7CA /* AccountTableViewCell.swift */,
+				F992B68A1F819DEE002E56B6 /* LoginRequestModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,8 +154,18 @@
 			isa = PBXGroup;
 			children = (
 				F916CA511F7BFBDB0083E7CA /* DashboardViewController.swift */,
+				F992B6881F819A5C002E56B6 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F992B6871F8198CA002E56B6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9BCB8A01F7AD7210079DAC4 /* Main.storyboard */,
+				F9BCB8A51F7AD7210079DAC4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		F9BCB8901F7AD7210079DAC4 = {
@@ -178,13 +193,12 @@
 		F9BCB89B1F7AD7210079DAC4 /* GenieU */ = {
 			isa = PBXGroup;
 			children = (
+				F992B6871F8198CA002E56B6 /* Storyboards */,
 				F916CA531F7BFBE20083E7CA /* ViewControllers */,
 				F916CA4E1F7AF58B0083E7CA /* Models */,
 				F90D019F1F7ADAA300D3EE5A /* Services */,
 				F9BCB89C1F7AD7210079DAC4 /* AppDelegate.swift */,
-				F9BCB8A01F7AD7210079DAC4 /* Main.storyboard */,
 				F9BCB8A31F7AD7210079DAC4 /* Assets.xcassets */,
-				F9BCB8A51F7AD7210079DAC4 /* LaunchScreen.storyboard */,
 				F9BCB8A81F7AD7210079DAC4 /* Info.plist */,
 			);
 			path = GenieU;
@@ -504,10 +518,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F992B6891F819A5C002E56B6 /* LoginViewController.swift in Sources */,
 				F9BCB89D1F7AD7210079DAC4 /* AppDelegate.swift in Sources */,
 				F916CA521F7BFBDB0083E7CA /* DashboardViewController.swift in Sources */,
 				F916CA551F7C23BA0083E7CA /* AccountTableViewCell.swift in Sources */,
 				F916CA501F7AF5980083E7CA /* Account.swift in Sources */,
+				F992B68B1F819DEE002E56B6 /* LoginRequestModel.swift in Sources */,
 				F90D01A11F7ADAC300D3EE5A /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
