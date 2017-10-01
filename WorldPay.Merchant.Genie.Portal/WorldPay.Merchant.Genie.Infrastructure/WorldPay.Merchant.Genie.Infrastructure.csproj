@@ -46,8 +46,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Systems\EventType.cs" />
     <Compile Include="Exceptions\AccountStorageRequestFailedException.cs" />
+    <Compile Include="Services\Credentials.cs" />
+    <Compile Include="Services\IAuthentication.cs" />
+    <Compile Include="Services\IGenieUserService.cs" />
     <Compile Include="Services\ILogger.cs" />
     <Compile Include="Services\Logger.cs" />
+    <Compile Include="Services\OAuthAuthenticator.cs" />
+    <Compile Include="Services\Token.cs" />
     <Compile Include="Storage\CloudAccountStore.cs" />
     <Compile Include="Models\Systems\Error.cs" />
     <Compile Include="Storage\GenieUser.cs" />

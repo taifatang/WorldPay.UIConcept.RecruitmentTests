@@ -48,5 +48,7 @@ namespace WorldPay.Merchant.Genie.Infrastructure.Models.Systems
                 }
             };
         }
+
+        public static string NonSecuredSecret = "user_secret";
     }
 }

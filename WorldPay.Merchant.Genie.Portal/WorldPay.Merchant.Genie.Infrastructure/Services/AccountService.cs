@@ -6,7 +6,7 @@ using WorldPay.Merchant.Genie.Infrastructure.Storage;
 
 namespace WorldPay.Merchant.Genie.Infrastructure.Services
 {
-    public class AccountService
+    public class AccountService : IGenieUserService
     {
         private readonly IAccountStorage _accountStorage;
         private readonly ILogger _logger;
@@ -30,4 +30,5 @@ namespace WorldPay.Merchant.Genie.Infrastructure.Services
             return response.Data;
         }
     }
+
 }
